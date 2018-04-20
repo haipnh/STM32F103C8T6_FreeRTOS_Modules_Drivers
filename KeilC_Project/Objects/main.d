@@ -8,3 +8,14 @@
 .\objects\main.o: ..\StdPeriph_Driver\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\objects\main.o: ..\StdPeriph_Driver\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
 .\objects\main.o: ..\StdPeriph_Driver\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\main.o: ..\FreeRTOSv10\include\FreeRTOS.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\main.o: ..\FreeRTOSv10\customStartupConfig\FreeRTOSConfig.h
+.\objects\main.o: ..\FreeRTOSv10\include\projdefs.h
+.\objects\main.o: ..\FreeRTOSv10\include\portable.h
+.\objects\main.o: ..\FreeRTOSv10\include\deprecated_definitions.h
+.\objects\main.o: ..\FreeRTOSv10\portable\RVDS\portmacro.h
+.\objects\main.o: ..\FreeRTOSv10\include\mpu_wrappers.h
+.\objects\main.o: ..\FreeRTOSv10\include\task.h
+.\objects\main.o: ..\FreeRTOSv10\include\list.h
+.\objects\main.o: .\Tasks\inc\BlinkLedTasks.h

@@ -459,9 +459,9 @@ C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include -IC:\Keil_v5\ARM\CM
 ARM Macro Assembler    Page 8 
 
 
-SIS\Include --predefine="__UVISION_VERSION SETA 524" --predefine="STM32F10X_MD 
-SETA 1" --list=.\listings\stm32f10x.lst ..\FreeRTOSv10\customStartupConfig\STM3
-2F10x.s
+SIS\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 524
+" --predefine="STM32F10X_MD SETA 1" --list=.\listings\stm32f10x.lst ..\FreeRTOS
+v10\customStartupConfig\STM32F10x.s
 
 
 
@@ -1180,4 +1180,4 @@ Symbol: xPortSysTickHandler
       At line 66 in file ..\FreeRTOSv10\customStartupConfig\STM32F10x.s
 Comment: xPortSysTickHandler used once
 5 symbols
-408 symbols in table
+409 symbols in table
