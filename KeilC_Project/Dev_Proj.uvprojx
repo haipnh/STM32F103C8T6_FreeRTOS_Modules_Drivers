@@ -488,7 +488,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>FreeRTOSv10</GroupName>
+          <GroupName>FreeRTOS_v10</GroupName>
           <Files>
             <File>
               <FileName>list.c</FileName>
@@ -523,12 +523,17 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>FreeRTOSv10_Tasks</GroupName>
+          <GroupName>FreeRTOS_Tasks</GroupName>
           <Files>
             <File>
               <FileName>BlinkLedTasks.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Tasks\src\BlinkLedTasks.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD20x4Task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Tasks\src\LCD20x4Task.c</FilePath>
             </File>
           </Files>
         </Group>

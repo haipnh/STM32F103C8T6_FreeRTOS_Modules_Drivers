@@ -22,3 +22,4 @@
 .\objects\main.o: ..\PeriphMod_Driver\TIMER_DELAY\inc\TIMER_DELAY.H
 .\objects\main.o: ..\StdPeriph_Driver\DEF_STM32.h
 .\objects\main.o: .\Tasks\inc\BlinkLedTasks.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

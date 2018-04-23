@@ -24,7 +24,7 @@ PURPOSE 	: Sending 4 bits to LCD  (Seek in HD44780 (LCD Controller) Datasheet)
 ************************************************************/
 void LCD_4Bit(uint8_t data4bit){
 		LCD_E = 1;
-		DelayUs(3);
+		DelayUs(5);
 		LCD_D7 = (data4bit & 0x08)>>3;
 		LCD_D6 = (data4bit & 0x04)>>2;
 		LCD_D5 = (data4bit & 0x02)>>1;
@@ -40,9 +40,9 @@ PURPOSE 	: Sending 8 bits to LCD (Seek in HD44780 (LCD Controller) Datasheet)
 *************************************************************************************************************************/
 void LCD_8Bit(uint8_t data8bit){
 		LCD_4Bit(data8bit>>4);
-		DelayUs(200);
+		DelayUs(100);
 		LCD_4Bit(data8bit);
-		DelayUs(200);
+		DelayUs(100);
 }
 /************************************************************************************************************************
 FUNCTION	: LCD_Command
@@ -54,7 +54,7 @@ void LCD_Command(uint8_t command){
 		LCD_RS = 0;
 		LCD_RW = 0;
 		LCD_8Bit(command);
-		DelayMs(2);
+		DelayMs(5);
 }
 /************************************************************************************************************************
 FUNCTION	: LCD_Data
@@ -66,7 +66,7 @@ void LCD_Data(uint8_t data){
 		LCD_RS = 1;
 		LCD_RW = 0;
 		LCD_8Bit(data);
-		DelayUs(20);
+		DelayUs(25);
 		LCD_RS = 0;
 }
 /************************************************************************************************************************
@@ -77,7 +77,7 @@ PURPOSE 	: Sending command LCD_CLEAR_DISPLAY (0x01) to clear screen
 *************************************************************************************************************************/
 void LCD_Clear(void){
 		LCD_Command(LCD_CLEAR_DISPLAY);
-		DelayMs(2);
+		DelayMs(5);
 }
 /************************************************************************************************************************
 FUNCTION	: LCD_Init4BitMode
@@ -86,13 +86,13 @@ RETURN		: None
 PURPOSE 	: Initializing the LCD to work with 4-bit mode
 *************************************************************************************************************************/
 void LCD_Init4BitMode(void){
-		LCD_Configure_GPIO();
-		LCD_RS = 0;				LCD_RW = 0;		LCD_4Bit(0x0);
 		DelayMs(20);
+		LCD_Configure_GPIO();
+		LCD_RS = 0;				LCD_RW = 0;		LCD_4Bit(0x0);		
 		LCD_4Bit(0x3);
 		DelayMs(5);
 		LCD_4Bit(0x3);
-		DelayUs(100);
+		DelayUs(200);
 		LCD_4Bit(0x3);
 		DelayMs(5);
 		LCD_4Bit(0x2);

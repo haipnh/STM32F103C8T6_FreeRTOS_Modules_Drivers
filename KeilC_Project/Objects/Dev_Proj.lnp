@@ -25,6 +25,7 @@
 ".\objects\heap_2.o"
 ".\objects\port.o"
 ".\objects\blinkledtasks.o"
+".\objects\lcd20x4task.o"
 ".\objects\main.o"
 --strict --scatter ".\Objects\Dev_Proj.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
