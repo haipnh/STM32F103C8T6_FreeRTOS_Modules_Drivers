@@ -10,14 +10,14 @@ DEFINING FILE AND INCLUDING LIBRARIES
 DEFINING ADDRESS OF GPIO PINS THAT USED FOR CONTROLLING THE LCD 
 *************************************************************************************************************************/
 
-#define	LCD_RS							PORTA_0
-#define LCD_RW							PORTA_1
-#define LCD_E								PORTA_2
+#define	LCD_RS							PORTB_1
+#define LCD_RW							PORTB_10
+#define LCD_E								PORTB_11
 		
-#define LCD_D4 							PORTA_3
-#define LCD_D5 							PORTA_4
-#define LCD_D6 							PORTA_5
-#define LCD_D7 							PORTA_6
+#define LCD_D4 							PORTB_12
+#define LCD_D5 							PORTB_13
+#define LCD_D6 							PORTB_14
+#define LCD_D7 							PORTB_15 
 
 #define LCD_FUNCTION_SET 				0x2C	//Che do 4 bit, hien thi 2 hang, font 5x8
 #define LCD_DISPLAY_CONTROL    	0x0C	//Cho phep hien thi, khong hien thi con tro

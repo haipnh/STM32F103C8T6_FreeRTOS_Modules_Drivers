@@ -16,6 +16,7 @@
 ".\objects\stm32f10x_spi.o"
 ".\objects\stm32f10x_wwdg.o"
 ".\objects\lcd_20x4.o"
+".\objects\ic_74595.o"
 ".\objects\timer_delay.o"
 ".\objects\list.o"
 ".\objects\queue.o"

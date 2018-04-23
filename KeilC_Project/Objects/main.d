@@ -18,4 +18,7 @@
 .\objects\main.o: ..\FreeRTOSv10\include\mpu_wrappers.h
 .\objects\main.o: ..\FreeRTOSv10\include\task.h
 .\objects\main.o: ..\FreeRTOSv10\include\list.h
+.\objects\main.o: ..\PeriphMod_Driver\LCD_20x4\inc\LCD_20x4.h
+.\objects\main.o: ..\PeriphMod_Driver\TIMER_DELAY\inc\TIMER_DELAY.H
+.\objects\main.o: ..\StdPeriph_Driver\DEF_STM32.h
 .\objects\main.o: .\Tasks\inc\BlinkLedTasks.h

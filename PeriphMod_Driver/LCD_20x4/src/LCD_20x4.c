@@ -10,11 +10,11 @@ PURPOSE 	: Configuring GPIO Pins to control LCD
 ************************************************************/
 void LCD_Configure_GPIO(void){
 		GPIO_InitTypeDef LCD_GPIO;
-		RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
-		LCD_GPIO.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6;
+		RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB,ENABLE);
+		LCD_GPIO.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_10 | GPIO_Pin_11 | GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15;
 		LCD_GPIO.GPIO_Mode = GPIO_Mode_Out_PP;
 		LCD_GPIO.GPIO_Speed = GPIO_Speed_50MHz;
-		GPIO_Init(GPIOA, &LCD_GPIO);	
+		GPIO_Init(GPIOB, &LCD_GPIO);	
 }
 /************************************************************
 FUNCTION	: LCD_4Bit

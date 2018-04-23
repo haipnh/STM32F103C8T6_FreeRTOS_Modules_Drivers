@@ -19,3 +19,4 @@
 .\objects\blinkledtasks.o: ..\FreeRTOSv10\include\mpu_wrappers.h
 .\objects\blinkledtasks.o: ..\FreeRTOSv10\include\task.h
 .\objects\blinkledtasks.o: ..\FreeRTOSv10\include\list.h
+.\objects\blinkledtasks.o: ..\PeriphMod_Driver\TIMER_DELAY\inc\TIMER_DELAY.h
